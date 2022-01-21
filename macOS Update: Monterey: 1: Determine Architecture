@@ -1,0 +1,27 @@
+#!/bin/bash
+
+: HEADER = <<'EOL'
+
+██████╗  ██████╗  ██████╗██╗  ██╗███████╗████████╗███╗   ███╗ █████╗ ███╗   ██╗
+██╔══██╗██╔═══██╗██╔════╝██║ ██╔╝██╔════╝╚══██╔══╝████╗ ████║██╔══██╗████╗  ██║
+██████╔╝██║   ██║██║     █████╔╝ █████╗     ██║   ██╔████╔██║███████║██╔██╗ ██║
+██╔══██╗██║   ██║██║     ██╔═██╗ ██╔══╝     ██║   ██║╚██╔╝██║██╔══██║██║╚██╗██║
+██║  ██║╚██████╔╝╚██████╗██║  ██╗███████╗   ██║   ██║ ╚═╝ ██║██║  ██║██║ ╚████║
+╚═╝  ╚═╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+
+        Name: Hugo Immediato
+ Description: Determines which update to run
+
+EOL
+
+#!/bin/bash
+arch=$(/usr/bin/arch)
+if [ "$arch" == "arm64" ]; then
+    echo "Apple Architecture Detected"
+    sudo jamf policy -event installMonterey
+elif [ "$arch" == "i386" ]; then
+    echo "Intel Architecture Detected"
+    '/Applications/Install macOS Monterey.app/Contents/Resources/startosinstall' --nointeraction --agreetolicense --forcequitapps
+else
+    echo "Unknown Architecture"
+fi
