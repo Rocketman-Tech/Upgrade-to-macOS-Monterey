@@ -11,13 +11,17 @@ _______________________________________________________________________
 
 Step 2: Create 2 Smart Computer Groups
 
-Smart Computer Group 1: macOS Update Monterey (Deploy Latest Package)
+Smart Computer Group 1: Title "macOS Update Monterey (Deploy Latest Package)"
 
-Create a Smart Group titled "macOS Update Monterey (Deploy Latest Package)" with the 'Criteria' - "Packages Installed by Casper" with the 'Operator' - "Does Not Have" - with the 'Value' of the Package Name, in this example "Install macOS Monterey 12.1.pkg"
+- Set 'Criteria' to "Packages Installed by Casper" 
+- Set 'Operator' to "Does Not Have"
+- Set 'Value' to the Package Name, in this example "Install macOS Monterey 12.1.pkg"
 
 Smart Computer Group 2: macOS Update Monterey (Has Latest Package)
 
-Create a Smart Group titled "macOS Update Monterey (Has Latest Package)" with the 'Criteria' - "Packages Installed by Casper" with the 'Operator' - "Has" - with the 'Value' of the Package Name, in this example "Install macOS Monterey 12.1.pkg"
+- Set 'Criteria' to "Packages Installed by Casper" 
+- Set 'Operator' to "Has"
+- Set 'Value' to the Package Name, in this example "Install macOS Monterey 12.1.pkg"
 
 *IMPORTANT* - FOR BOTH SMART GROUPS, ADD CRITERIA TO EXCLUDE MACHINES ALREADY ON macOS MONTEREY OR THE VERSION YOU ARE UPGRADING TOO)
 _______________________________________________________________________
