@@ -6,7 +6,7 @@ https://mrmacintosh.com/macos-12-monterey-full-installer-database-download-direc
 
 _______________________________________________________________________
 
-Step 1: Download/Create FULL macOS Monterey Installer Package. Name Package "Install macOS Monterey Version#.pkg" for this example, we will use "Install macOS Monterey 12.1.pkg"
+Step 1: Download/Create FULL macOS Monterey Installer Package. Name Package "Install macOS Monterey Version#.pkg" for this example, we will use "Install macOS Monterey 12.1.pkg" - Upload package to Jamf Pro Server.
 _______________________________________________________________________
 
 Step 2: Create 2 Smart Computer Groups
