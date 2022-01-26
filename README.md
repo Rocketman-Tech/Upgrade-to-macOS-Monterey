@@ -21,7 +21,7 @@ Smart Computer Group 2: macOS Update Monterey (Has Latest Package)
 - Set 'Operator' to "Has"
 - Set 'Value' to the Package Name, in this example "Install macOS Monterey 12.1.pkg"
 
-*IMPORTANT* - FOR BOTH SMART GROUPS, ADD CRITERIA TO EXCLUDE MACHINES ALREADY ON macOS MONTEREY OR THE VERSION YOU ARE UPGRADING TOO)
+*IMPORTANT* - FOR BOTH SMART GROUPS, ADD CRITERIA TO EXCLUDE MACHINES ALREADY ON macOS MONTEREY OR THE VERSION YOU ARE UPGRADING TOO
 _______________________________________________________________________
 
 Step 3: Create 3 Policies
