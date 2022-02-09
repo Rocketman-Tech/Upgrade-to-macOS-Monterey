@@ -9,12 +9,13 @@
 ██║  ██║╚██████╔╝╚██████╗██║  ██╗███████╗   ██║   ██║ ╚═╝ ██║██║  ██║██║ ╚████║
 ╚═╝  ╚═╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
 
-        Name: Hugo Immediato
- Description: Determines which update to run
+        Name: Determine Architecture
+ Description: Determines which hardware architecture the mac is running
+              (e.g. Intel vs Apple Silicon) and takes appropriate next step.
 
 EOL
 
-#!/bin/bash
+## Determine hardware time and either start upgrade or run alternate policy
 arch=$(/usr/bin/arch)
 if [ "$arch" == "arm64" ]; then
     echo "Apple Architecture Detected"
